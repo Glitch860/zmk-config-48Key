@@ -1,4 +1,4 @@
-#Custom ZMK build for 48Key keyboard
+# Custom ZMK build for 48Key keyboard
 
 Included:
 - ZMK config
