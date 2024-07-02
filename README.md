@@ -3,4 +3,5 @@
 
 Included:
 - ZMK config
-- 3D print STL files
+
+Find 3D printer files for this board at this (repo)[https://github.com/Glitch860/48Key/]
