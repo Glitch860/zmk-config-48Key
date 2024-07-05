@@ -57,45 +57,45 @@ behaviors {
 
         default_layer {
 //--------------------------------------------------------------------------------------------------------
-// |  TAB  |  Q  |  W  | E |  R  |   T   |                       |   Y   |  U  | I |  O  |  P  |  DEL  |
+// |  TAB  |  Q  |  W  | E |  R  |   T   |                       |   Y   |  U  | I |  O  |  P  |  \    |
 // |  CTL  |  A  |  S  | D |  F  |   G   |                       |   H   |  J  | K |  L  |  ;  |   '   |
 // | SHIFT |  Z  |  X  | C |  V  |   B   |                       |   N   |  M  | , |  .  |  /  | SHIFT |
-//         | WIN | ALT | - | ENT | SPACE | BKSP |         | BKSP | SPACE | ENT | = | ALT | WIN |
+//         | WIN | ALT | - | ENT | SPACE | BKSP |         | BKSP | SPACE | ENT | = | ALT | APP |
             bindings = <
-                &kp TAB      &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp  U      &kp I      &kp O      &kp P      &kp DEL
+                &kp TAB      &kp Q      &kp W      &kp E      &kp R      &kp T      &kp Y      &kp  U      &kp I      &kp O      &kp P      &kp NUBS
                 &kp LCTRL      &kp A      &kp S      &kp D      &kp F      &kp G      &kp H      &kp  J      &kp K      &kp L      &kp SEMI      &kp SQT
                 &kp LSHIFT      &kp Z      &kp X      &kp C      &kp V      &kp B      &kp N      &kp  M      &kp COMMA      &kp DOT      &kp FSLH      &kp RSHIFT
-                &kp LWIN      &kp LALT      &kp MINUS      &blt SETTINGS ENTER      &clt FUNCTION SPACE      &nlt NUMBER BSPC      &nlt NUMBER BSPC      &clt FUNCTION SPACE      &blt SETTINGS ENTER      &kp PLUS      &kp RALT      &kp RWIN
+                &kp LWIN      &kp LALT      &kp MINUS      &blt SETTINGS ENTER      &clt FUNCTION SPACE      &nlt NUMBER BSPC      &nlt NUMBER BSPC      &clt FUNCTION SPACE      &blt SETTINGS ENTER      &kp PLUS      &kp RALT      &kp K_APP
             >;
          };
         function_layer {
-//----------------------------------------------------------------------------------------------------------------------------
+//------------------------------------------------------------------------------------------------------------------------------
 // |  ESC  |      | HOME | UP |  END  | PSCRN |                           | VOL_UP | PG_UP |   UP   | PG_DN  |   BR+  |  DEL  |
-// | Trans | CAPS | LEFT | DN | RIGHT | FIND  |                           | VOL_DN |  LEFT |  DOWN  | RIGHT  |   BR-  |       |
+// | ctrl  | CAPS | LEFT | DN | RIGHT | FIND  |                           | VOL_DN |  LEFT |  DOWN  | RIGHT  |   BR-  |       |
 // | SHIFT |      |  X   | C  |  V    |       |                           |  MUTE  |       |        |        |        | SHIFT |
-//         | APP  | ALT  | [  |  ENT  | SPACE | BKSP |             | BKSP | SPACE  |  ENT  |    ]   |   ALT  |   APP  |
+//         | WIN  | ALT  | [  |  ENT  | SPACE | BKSP |             | BKSP | SPACE  |  ENT  |    ]   |   ALT  |   APP  |
             bindings = <
                 &kp ESC      &none      &kp HOME      &kp UP      &kp END      &kp PSCRN      &kp C_VOL_UP      &kp  PG_UP      &kp UP      &kp PG_DN      &kp C_BRI_UP      &kp DEL
-                &trans      &kp CAP      &kp LEFT      &kp DOWN      &kp RIGHT      &kp K_FIND      &kp C_VOL_DN      &kp  LEFT      &kp DOWN      &kp RIGHT      &kp C_BRI_DN      &trans
+                &kp LCTRL      &kp CAP      &kp LEFT      &kp DOWN      &kp RIGHT      &kp K_FIND      &kp C_VOL_DN      &kp  LEFT      &kp DOWN      &kp RIGHT      &kp C_BRI_DN      &trans
                 &kp LSHIFT      &none      &trans      &trans      &trans      &none      &kp C_MUTE      &none      &none     &none       &none      &kp RSHIFT
-                &kp K_APP      &kp LALT      &kp LBKT      &blt SETTINGS ENTER      &kp SPACE      &nlt NUMBER BSPC      &nlt NUMBER BSPC      &kp  SPACE      &blt SETTINGS ENTER      &kp RBKT      &kp RALT      &kp K_APP
+                &kp LWIN      &kp LALT      &kp LBKT      &blt SETTINGS ENTER      &kp SPACE      &nlt NUMBER BSPC      &nlt NUMBER BSPC      &kp  SPACE      &blt SETTINGS ENTER      &kp RBKT      &kp RALT      &kp K_APP
             >;
         };
         number_layer {
-//----------------------------------------------------------------------------------------------------------
+//-----------------------------------------------------------------------------------------------------------
 // |  `    |  !  |  @  | #  | $   |    %  |                        |   ^   | &   | *  |  (  |  )  |  DEL  |
-// | Tran  |  1  |  2  | 3  | 4   |    5  |                        |   6   | 7   | 8  |  9  |  0  | SHIFT |
+// | ctrl  |  1  |  2  | 3  | 4   |    5  |                        |   6   | 7   | 8  |  9  |  0  | SHIFT |
 // | F1    |  F2 |  F3 | F4 | F5  |   F6  |                        |   F7  | F8  | F9 | F10 | F11 |  F12  |
 //         | WIN | ALT | -  | ENT | SPACE | BKSP |          | BKSP | SPACE | ENT | +  | ALT | APP |
             bindings = <
                 &kp GRAVE      &kp EXCL      &kp AT      &kp HASH      &kp DOLLAR      &kp PERCENT      &kp CARET      &kp AMPS      &kp ASTERISK      &kp LPAR      &kp RPAR      &kp DEL
-                &trans      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
+                &kp LCTRL      &kp N1      &kp N2      &kp N3      &kp N4      &kp N5      &kp N6      &kp N7      &kp N8      &kp N9      &kp N0      &trans
                 &kp F1      &kp F2      &kp F3      &kp F4      &kp F5      &KP F6      &kp F7      &kp F8      &kp F9      &kp F10      &kp F11     &kp F12
-                &kp LWIN      &kp LALT      &kp MINUS      &blt SETTINGS ENTER      &clt FUNCTION SPACE      &kp BSPC      &kp BSPC      &clt FUNCTION  SPACE      &blt SETTINGS ENTER      &kp PLUS      &kp RALT      &kp RWIN
+                &kp LWIN      &kp LALT      &kp MINUS      &blt SETTINGS ENTER      &clt FUNCTION SPACE      &kp BSPC      &kp BSPC      &clt FUNCTION  SPACE      &blt SETTINGS ENTER      &kp PLUS      &kp RALT      &kp K_APP
             >;
          };
         settings_layer {
-//---------------------------------------------------------------------------------------------------------------------
+//---------------------------------------------------------------------------------------------------------------------------
 // | BT SL 0 | BT SL 1  |  BT SL 2  | BT SL 3 | BT SL 4  |     |                     |     |  |  |  |            | BT_CLR |
 // | BT DC 0 | BT DC 1  |  BT DC 2  | BT DC 3 | BT DC 4  |     |                     |     |  |  |  |            |        |
 // |         |          |           |         |          | to4 |                     | to4 |  |  |  |            |        |
