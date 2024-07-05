@@ -52,8 +52,8 @@ behaviors {
 #define SETTINGS 3
 #define NUMPAD 4
 
-{
-/ keymap {
+/{
+keymap {
         compatible = "zmk,keymap";
 
         default_layer {
