@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 //Mods
-/{
+/ {
 behaviors {
 
     clt: func_layer_tap { 
@@ -44,15 +44,14 @@ behaviors {
     global-quick-tap; 
     bindings = <&mo>, <&kp>; 
     };
-  };
-};
+ };
+
 #define DEFAULT 0
 #define FUNCTION 1
 #define NUMBER 2
 #define SETTINGS 3
 #define NUMPAD 4
 
-/{
 keymap {
         compatible = "zmk,keymap";
 
