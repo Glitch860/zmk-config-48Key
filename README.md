@@ -11,9 +11,13 @@ Layers:
 DEFAULT 0
 
 //--------------------------------------------------------------------------------------------------------
+
 // |  TAB  |  Q  |  W  | E |  R  |   T   |                       |   Y   |  U  | I |  O  |  P  |  \    |
+
 // |  CTL  |  A  |  S  | D |  F  |   G   |                       |   H   |  J  | K |  L  |  ;  |   '   |
+
 // | SHIFT |  Z  |  X  | C |  V  |   B   |                       |   N   |  M  | , |  .  |  /  | SHIFT |
+
 //         | WIN | ALT | - | ENT | SPACE | BKSP |         | BKSP | SPACE | ENT | = | ALT | APP |
 
 FUNCTION 1
