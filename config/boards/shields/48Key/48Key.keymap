@@ -51,7 +51,7 @@ behaviors {
 #define SETTINGS 3
 #define NUMPAD 4
 
-/ {
+{
     keymap {
         compatible = "zmk,keymap";
 
