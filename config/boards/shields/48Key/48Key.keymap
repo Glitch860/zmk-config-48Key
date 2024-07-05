@@ -9,7 +9,7 @@
 #include <dt-bindings/zmk/bt.h>
 
 //Mods
-behaviors {
+/ behaviors {
 
     clt: func_layer_tap { 
     compatible = "zmk,behavior-hold-tap"; 
@@ -52,7 +52,7 @@ behaviors {
 #define NUMPAD 4
 
 {
-    keymap {
+/ keymap {
         compatible = "zmk,keymap";
 
         default_layer {
