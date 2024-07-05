@@ -37,9 +37,9 @@ behaviors {
     bindings = <&mo>, <&kp>; 
     };
 
-    blt: settings_layer_tap { 
+    blt: settings_layer_mod { 
     compatible = "zmk,behavior-hold-tap"; 
-    label = "BT_LAYER_TAP"; 
+    label = "BT_LAYER_MOD"; 
     #binding-cells = <2>; 
     flavor = "tap-preferred"; 
     tapping-term-ms = <200>; 
@@ -61,10 +61,10 @@ keymap {
          };
         function_layer {
             bindings = <
-                &kp ESC      &none     &kp HOME   &kp UP               &kp END    &kp PSCRN        &kp C_VOL_UP      &kp PG_UP  &kp UP               &kp PG_DN  &kp C_BRI_UP  &kp DEL
-                &kp LCTRL    &kp CAP   &kp LEFT   &kp DOWN             &kp RIGHT  &kp LC(F)        &kp C_VOL_DN      &kp LEFT   &kp DOWN             &kp RIGHT  &kp C_BRI_DN  &kp LG(L)
-                &kp LSHIFT   &none     &kp LC(X)  &kp LC(C)            &kp LC(V)  &none            &kp C_MUTE        &none       &none                &none     &none         &kp RSHIFT
-                &kp LWIN     &kp LALT  &kp LBKT   &blt SETTINGS ENTER  &kp SPACE  &nlt NUMBER BSPC &nlt NUMBER BSPC  &kp SPACE   &blt SETTINGS ENTER  &kp RBKT  &kp RALT      &kp K_APP
+                &kp ESC      &none     &kp HOME   &kp UP               &kp END    &kp PSCRN        &kp C_VOL_UP      &kp PG_UP   &kp UP               &kp PG_DN  &kp C_BRI_UP  &kp DEL
+                &kp LCTRL    &kp CAP   &kp LEFT   &kp DOWN             &kp RIGHT  &kp LC(F)        &kp C_VOL_DN      &kp LEFT    &kp DOWN             &kp RIGHT  &kp C_BRI_DN  &kp LG(L)
+                &kp LSHIFT   &none     &kp LC(X)  &kp LC(C)            &kp LC(V)  &none            &kp C_MUTE        &none       &none                &none      &none         &kp RSHIFT
+                &kp LWIN     &kp LALT  &kp LBKT   &blt SETTINGS ENTER  &kp SPACE  &nlt NUMBER BSPC &nlt NUMBER BSPC  &kp SPACE   &blt SETTINGS ENTER  &kp RBKT   &kp RALT      &kp K_APP
             >;
         };
         number_layer {
