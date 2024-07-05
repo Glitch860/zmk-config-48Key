@@ -9,7 +9,8 @@
 #include <dt-bindings/zmk/bt.h>
 
 //Mods
-/ behaviors {
+/{
+behaviors {
 
     clt: func_layer_tap { 
     compatible = "zmk,behavior-hold-tap"; 
@@ -43,8 +44,8 @@
     global-quick-tap; 
     bindings = <&mo>, <&kp>; 
     };
+  };
 };
-
 #define DEFAULT 0
 #define FUNCTION 1
 #define NUMBER 2
