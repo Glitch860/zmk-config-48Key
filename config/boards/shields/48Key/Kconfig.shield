@@ -1,2 +1,2 @@
 config SHIELD_48KEY
-    def_bool $(shields_list_containers,48Key)
+    def_bool $(shields_list_contains,48Key)
