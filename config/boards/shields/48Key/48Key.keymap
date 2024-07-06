@@ -30,7 +30,7 @@ keymap {
         function_layer {
             bindings = <
                 &kp ESC      &none     &kp HOME   &kp UP               &kp END    &kp PSCRN        &kp C_VOL_UP      &kp PG_UP  &kp UP               &kp PG_DN  &kp C_BRI_UP  &kp DEL
-                &kp LCTRL    &kp CAP   &kp LEFT   &kp DOWN             &kp RIGHT  &kp LC(F)        &kp C_VOL_DN      &kp LEFT   &kp DOWN             &kp RIGHT  &kp C_BRI_DN  &kp LG(L)
+                &kp LCTRL    &kp CAPS   &kp LEFT   &kp DOWN             &kp RIGHT  &kp LC(F)        &kp C_VOL_DN      &kp LEFT   &kp DOWN             &kp RIGHT  &kp C_BRI_DN  &kp LG(L)
                 &kp LSHIFT   &none     &kp LC(X)  &kp LC(C)            &kp LC(V)  &none            &kp C_MUTE        &none      &none                &none      &none         &kp RSHIFT
                 &kp LWIN     &kp LALT  &kp LBKT   &lt SETTINGS ENTER  &kp SPACE   &lt NUMBER BSPC  &lt NUMBER BSPC  &kp SPACE   &lt SETTINGS ENTER   &kp RBKT   &kp RALT      &kp K_APP
             >;
