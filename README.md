@@ -47,6 +47,6 @@ FN 4
 | ROW 0 | ROW 1 | ROW 2 | ROW 3 | ROW 4 | ROW 5 | ROW 6 | ROW 7 | ROW 8 | ROW 9 | ROW 10 | ROW 11 |
 | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ |
 | F1    |  F2   |  F3   |  F4   |  F5   |   F6  |   F7  |  F8   |   F9  |  F10  |   F11  |   F12  |
-|       |       |       |       |       |       |       |       |       |       |        |        |
-|       |       |       |       |       |       |       |       |       |       |        |        |
+| Ctrl  |  F13  |  F14  |  F15  |  F16  |  F17  |  F18  |  F19  |  F20  |  F21  |   F22  | Enter  |
+| Shift |       |       |       |       |       |       |       |       |       |        | Shift  |
 |  WIN  |  ALT  |   -   |  ENT  | SPACE | BKSP  |  BKSP | SPACE |  ENT  |   =   |   ALT  |   APP  |

@@ -6,8 +6,8 @@
 
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-#include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
+#include <dt-bindings/zmk/bt.h>
 
 #define DEFAULT 0
 #define FUNCTION 1
@@ -22,10 +22,10 @@ keymap {
 
         default_layer {
             bindings = <
-                &kp TAB       &kp Q      &kp W      &kp E                &kp R                &kp T            &kp Y             &kp  U               &kp I                &kp O        &kp P     &kp NUBS
-                &kp LCTRL     &kp A      &kp S      &kp D                &kp F                &kp G            &kp H             &kp  J               &kp K                &kp L        &kp SEMI  &kp SQT
-                &kp LSHIFT    &kp Z      &kp X      &kp C                &kp V                &kp B            &kp N             &kp  M               &kp COMMA            &kp DOT      &kp FSLH  &kp RSHIFT
-                &kp LWIN      &kp LALT   &lt FN MINUS  &lt NUMBER ENTER  &lt FUNCTION SPACE   &kp BSPC         &lt NUMBER BSPC   &lt FUNCTION SPACE   &lt SETTINGS ENTER   &lt FN PLUS  &kp RALT  &kp K_APP
+                &kp TAB       &kp Q      &kp W         &kp E             &kp R                &kp T       &kp Y             &kp  U               &kp I                &kp O        &kp P     &kp NUBS
+                &kp LCTRL     &kp A      &kp S         &kp D             &kp F                &kp G       &kp H             &kp  J               &kp K                &kp L        &kp SEMI  &kp SQT
+                &kp LSHIFT    &kp Z      &kp X         &kp C             &kp V                &kp B       &kp N             &kp  M               &kp COMMA            &kp DOT      &kp FSLH  &kp RSHIFT
+                &kp LWIN      &kp LALT   &lt FN MINUS  &lt NUMBER ENTER  &lt FUNCTION SPACE   &kp BSPC    &lt NUMBER BSPC   &lt FUNCTION SPACE   &lt SETTINGS ENTER   &lt FN PLUS  &kp RALT  &kp K_APP
             >;
          };
         function_layer {
@@ -38,18 +38,18 @@ keymap {
         };
         number_layer {
             bindings = <
-                &kp GRAVE  &kp EXCL   &kp AT     &kp HASH    &kp DOLLAR           &kp PERCENT  &kp CARET  &kp AMPS     &kp ASTERISK    &kp LPAR   &kp RPAR   &kp DEL
-                &kp LCTRL  &kp N1     &kp N2     &kp N3      &kp N4               &kp N5       &kp N6     &kp N7       &kp N8          &kp N9     &kp N0     &kp ENTER
-                &kp LSHIFT &none      &none      &none       &none                &none        &none      &none        &kp COMMA       &kp DOT    &kp FSLH   &kp RSHIFT
-                &kp LWIN   &kp LALT   &kp MINUS  &trans      &lt FUNCTION SPACE   &trans       &trans     &trans       &trans          &kp PLUS   &kp RALT   &kp K_APP
+                &kp GRAVE  &kp EXCL   &kp AT     &kp HASH    &kp DOLLAR   &kp PERCENT  &kp CARET  &kp AMPS   &kp ASTERISK    &kp LPAR   &kp RPAR   &kp DEL
+                &kp LCTRL  &kp N1     &kp N2     &kp N3      &kp N4       &kp N5       &kp N6     &kp N7     &kp N8          &kp N9     &kp N0     &kp ENTER
+                &kp LSHIFT &none      &none      &none       &none        &none        &none      &none      &kp COMMA       &kp DOT    &kp FSLH   &kp RSHIFT
+                &kp LWIN   &kp LALT   &kp MINUS  &trans      &trans       &trans       &trans     &trans     &trans          &kp PLUS   &kp RALT   &kp K_APP
             >;
          };
         settings_layer {
             bindings = <
-                &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none  &none  &none  &none  &none  &none  &bt BT_CLR
-                &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none  &none  &none  &none  &none  &none  &out OUT_TOG
-                &none          &none          &none          &none          &none          &none  &none  &none  &none  &none  &none  &none
-                &bootloader    &none          &none          &trans         &trans         &trans &trans &trans &trans &none  &none  &bt BT_CLR_ALL
+                &bt BT_SEL 0   &bt BT_SEL 1   &bt BT_SEL 2   &bt BT_SEL 3   &bt BT_SEL 4   &none   &none   &none   &none   &none  &none  &bt BT_CLR
+                &bt BT_DISC 0  &bt BT_DISC 1  &bt BT_DISC 2  &bt BT_DISC 3  &bt BT_DISC 4  &none   &none   &none   &none   &none  &none  &out OUT_TOG
+                &none          &none          &none          &none          &none          &none   &none   &none   &none   &none  &none  &none
+                &bootloader    &none          &none          &trans         &trans         &trans  &trans  &trans  &trans  &none  &none  &bt BT_CLR_ALL
             >;
          };
         fn_layer {
