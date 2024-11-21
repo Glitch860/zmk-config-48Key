@@ -2,5 +2,5 @@ if SHIELD_48KEY
             
  config ZMK_KEYBOARD_NAME
      default "48Key"
- CONFIG_ZMK_STUDIO=y
+
 endif
