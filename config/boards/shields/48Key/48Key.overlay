@@ -1,5 +1,6 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "48Key.dtsi"
+
 / {
     chosen {
         zmk,kscan = &kscan0;
@@ -7,18 +8,13 @@
       
         // Other chosen items
     };
-};
+}; 
 
 / {
-    chosen {
-        zmk,kscan = &default_kscan;
-        zmk,matrix_transform = &default_transform;
-    };
-
-    default_kscan: kscan {
+    kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "col2row";
-		wakeup-source;
+        wakeup-source;
 
         row-gpios = <&pro_micro 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
                     <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>,
@@ -38,7 +34,7 @@
                     <&pro_micro 8 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 9 GPIO_ACTIVE_HIGH>;
     };
-};
+}; 
 
 / {
     default_transform: keymap_transform0 {
