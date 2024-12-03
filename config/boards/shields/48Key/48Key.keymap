@@ -60,5 +60,17 @@ keymap {
                 &kp LWIN   &kp LALT   &kp LBKT   &trans   &trans   &trans    &trans   &trans   &trans   &kp RBKT &kp RALT  &kp K_APP
             >;
          };
+        studio1_layer {
+            status = "reserved";
+        };
+        studio2_layer {
+            status = "reserved";
+        };
+        studio3_layer {
+            status = "reserved";
+        };
+        studio4_layer {
+            status = "reserved";
+        };
     };
 };
