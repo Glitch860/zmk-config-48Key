@@ -4,49 +4,61 @@
 
 Find 3D printer files for this board at this (repo)[https://github.com/Glitch860/48Key/]
 
-Layers:
+Parts list used for this build: 
+- 18 gauge copper wire
+- 28 AWG Flexible Silicone Wire
+- Heat shrink
+- 48 1N4148 diodes
+- 48 MX style switches
+- NiceNanoV2 controller
+- 1 Battery helper PCB from [https://www.boardsource.xyz/]
+- 5 2.5mm hex screws and nuts
+- 100 mAh battery
 
-DEFAULT 0
+Build Guide:
 
-| ROW 0 | ROW 1 | ROW 2 | ROW 3 | ROW 4 | ROW 5 | ROW 6 | ROW 7 | ROW 8 | ROW 9 | ROW 10 | ROW 11 |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ |
-|  TAB  |   Q   |   W   |   E   |   R   |   T   |   Y   |  U    |   I   |   O   |    P   |   \    |
-|  CTL  |   A   |   S   |   D   |   F   |   G   |   H   |  J    |   K   |   L   |    ;   |    '   |
-| SHIFT |   Z   |   X   |   C   |   V   |   B   |   N   |   M   |   ,   |   .   |    /   | SHIFT  |
-|  WIN  |  ALT  |   -   |  ENT  | SPACE | BKSP  |  BKSP | SPACE |  ENT  |   =   |   ALT  |   APP  |
+1. Start by printing the case. I did mine standing up. I used a .04mm Nozzle printing at a .2mm layer height with tree supports. The base can be printed flat with supports on the bed only if the printer bed is big enough.
 
-FUNCTION 1
+2. Pop in the 48 MX switches
 
-| ROW 0 | ROW 1 | ROW 2 | ROW 3 | ROW 4 | ROW 5  | ROW 6 | ROW 7 | ROW 8 | ROW 9 | ROW 10 | ROW 11 |
-| ----- | ----- | ----- | ----- | ----- | ------ | ----- | ----- | ----- | ----- | ------ | ------ |
-|  ESC  |       |  HOME |   UP  |  END  | PSCRN  | VOL_UP| PG_UP |  UP   | PG_DN |   BR+  |   DEL  |
-| CTRL  |  CAPS | LEFT  |  DOWN | RIGHT | FIND   | VOL_DN|  LEFT |  DOWN | RIGHT |   BR-  |  LOCK  |
-| SHIFT |       | CUT   |  COPY | Paste | INSERT | MUTE  |       |       |       |        | SHIFT  |
-|  WIN  | ALT   |   {[  |  ENT  | SPACE | BKSP   |  BKSP | SPACE |  ENT  |   ]}  |   ALT  |   APP  |
+3. Pre coil the 48 Diodes. I did this using the end of a small screwdriver.
 
-NUMBERS 2
+4. Solder all the diodes to one pin of the switch. Diodes will get wired to the row. The other leg will be soldered to the columns.
 
-| ROW 0 | ROW 1 | ROW 2 | ROW 3 | ROW 4 | ROW 5 | ROW 6 | ROW 7 | ROW 8 | ROW 9 | ROW 10 | ROW 11 |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ |
-|  `    |    !  |    @  |    #  |   $   |    %  |   ^   |   &   |    *  |  (    |   )    |  DEL   |
-| CTRL  |   1   |   2   |   3   |   4   |   5   |   6   |   7   |    8  |    9  |    0   | ENTER  |
-| SHIFT |       |       |       |       |       |       |       |   ,   |  .    |   /    | SHIFT  |
-|  WIN  |   ALT |   -   |   ENT | SPACE | BKSP  |  BKSP | SPACE |  ENT  |   +   |   ALT  |   APP  |
+5. Using the 18 gauge copper wire solder the rows and columns. Be sure to use heat shrink on any points where the wires will touch. If they touch it will cause a short and the keyboard won't work.
 
-SETTINGS 3
+6. (optional) Solder the battery helper onto the NiceNano controller
+   
+7. Using the 28 AWG silicone wire connect the columns and rows to the pins on the NiceNano controller.
 
-| ROW 0  | ROW 1 | ROW 2 | ROW 3 | ROW 4 | ROW 5 | ROW 6 | ROW 7 | ROW 8 | ROW 9 | ROW 10 | ROW 11     |
-| -----  | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------     |
-|BT SL 0 |BT SL 1|BT SL 2|BT SL 3|BT SL 4|       |       |       |       |       |        | BT_CLR     |
-|BT DC 0 |BT DC 1|BT DC 2|BT DC 3|BT DC 4|       |       |       |       |       |        | TOG_USB    |
-|        |       |       |       |       |       |       |       |       |       |        |            |
-|BootLoad|       |       | TRANS | TRANS | TRANS | TRANS | TRANS | TRANS |       |        | BT_CLR_ALL |
+8. Connect the battery to the battery helper (if used), otherwise connect it directly to the controller.
 
-FN 4
+9. Using a soldering iron heat sink the hex nuts into the case.
 
-| ROW 0 | ROW 1 | ROW 2 | ROW 3 | ROW 4 | ROW 5 | ROW 6 | ROW 7 | ROW 8 | ROW 9 | ROW 10 | ROW 11 |
-| ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ----- | ------ | ------ |
-| F1    |  F2   |  F3   |  F4   |  F5   |   F6  |   F7  |  F8   |   F9  |  F10  |   F11  |   F12  |
-| Ctrl  |  F13  |  F14  |  F15  |  F16  |  F17  |  F18  |  F19  |  F20  |  F21  |   F22  | Enter  |
-| Shift |       |       |       |       |       |       |       |       |       |        | Shift  |
-|  WIN  |  ALT  |  [{   |  ENT  | SPACE | BKSP  |  BKSP | SPACE |  ENT  |   ]}  |   ALT  |   APP  |
+10. Flash the NiceNano controller with the compile firmware. Be sure to test the keyboard
+
+11. Add rubber feet to the base and screw the base to the case.
+
+12. Add your keycaps and enjoy typing!
+
+
+# License
+
+<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1"><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" src="https://mirrors.creativecommons.org/presskit/icons/sa.svg?ref=chooser-v1"></a></p>
+
+You are free to:
+
+Share — copy and redistribute the material in any medium or format
+
+Adapt — remix, transform, and build upon the material
+
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+Under the following terms:
+
+Attribution — You must give appropriate credit, provide a link to the license, and indicate if changes were made. You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+
+NonCommercial — You may not use the material for commercial purposes.
+
+ShareAlike — If you remix, transform, or build upon the material, you must distribute your contributions under the same license as the original.
+
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
