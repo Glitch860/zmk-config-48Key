@@ -15,7 +15,7 @@
 #define NUMBER 2
 #define SETTINGS 3
 #define FN 4
-
+&led_strip { chain-length = <48>; };
 / {
 
 keymap {
