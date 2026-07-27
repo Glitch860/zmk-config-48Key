@@ -13,7 +13,8 @@
 #define FUNCTION 1
 #define NUMBER 2
 #define SETTINGS 3
-#define FN 4
+#define FN 4 
+#define GAMING 5
 
 / {
 
@@ -30,7 +31,7 @@ keymap {
          };
         function_layer {
             bindings = <
-                &kp ESC      &none     &kp HOME    &kp UP        &kp END    &kp PSCRN   &kp C_VOL_UP   &kp LC(LEFT) &kp UP               &kp LC(RIGHT) &kp C_BRI_UP  &kp DEL
+                &kp ESC      &to 5     &kp HOME    &kp UP        &kp END    &kp PSCRN   &kp C_VOL_UP   &kp LC(LEFT) &kp UP               &kp LC(RIGHT) &kp C_BRI_UP  &kp DEL
                 &kp LCTRL    &kp CAPS  &kp LEFT    &kp DOWN      &kp RIGHT  &kp LC(F)   &kp C_VOL_DN   &kp LEFT     &kp DOWN             &kp RIGHT     &kp C_BRI_DN  &kp LG(L)
                 &kp LSHIFT   &none     &kp LC(X)   &kp LC(C)     &kp LC(V)  &kp INS     &kp C_MUTE     &kp PG_UP    &none                &kp PG_DN     &none         &kp RSHIFT
                 &kp LWIN     &kp LALT  &lt FN LBKT &trans        &trans     &trans      &trans         &trans       &lt SETTINGS ENTER   &lt FN RBKT   &kp RALT      &kp K_APP
@@ -58,6 +59,14 @@ keymap {
                 &kp LCTRL  &kp F13    &kp F14    &kp F15  &kp F16  &kp F17   &kp F18  &kp F19  &kp F20  &kp F21  &kp F22   &kp ENTER
                 &kp LSHIFT &none      &none      &none    &none    &none     &none    &none    &none    &none    &none     &kp RSHIFT
                 &kp LWIN   &kp LALT   &kp LBKT   &trans   &trans   &trans    &trans   &trans   &trans   &kp RBKT &kp RALT  &kp K_APP
+            >;
+         };
+        gaming_layer {
+            bindings = <
+                &kp TAB       &kp Q      &kp W         &kp E             &kp R                &kp T       &kp Y             &kp  U               &kp I                &kp O        &kp P     &kp ESC
+                &kp LCTRL     &kp A      &kp S         &kp D             &kp F                &kp G       &kp H             &kp  J               &kp K                &kp L        &kp SEMI  &kp SQT
+                &kp LSHIFT    &kp Z      &kp X         &kp C             &kp V                &kp B       &kp N             &kp  M               &kp COMMA            &kp DOT      &kp FSLH  &kp RSHIFT
+                &kp LWIN      &LT NUMBER LALT   &kp LALT  &kp SPACE  &KP SPACE   &kp ENTER   &lt NUMBER BSPC   &lt FUNCTION SPACE   &lt SETTINGS ENTER   &lt FN EQUAL  &kp K_APP  &to 0
             >;
          };
         studio1_layer {
