@@ -13,13 +13,13 @@ config ZMK_RGB_UNDERGLOW_EXT_POWER
 
 config ZMK_RGB_UNDERGLOW_BRT_MIN
     int "RGB underglow minimum brightness in percent"
-    range 0 100
-    default 0
+    range 0 25
+    default 15
 
 config ZMK_RGB_UNDERGLOW_BRT_MAX
     int "RGB underglow maximum brightness in percent"
     range ZMK_RGB_UNDERGLOW_BRT_MIN 100
-    default 100
+    default 25
 
 config ZMK_RGB_UNDERGLOW_HUE_STEP
     int "RGB underglow hue step in degrees"
